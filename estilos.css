@@ -1,0 +1,480 @@
+html,
+body{
+    width:  100%;
+    height: 100%;
+    padding: 10px, 5px, 5px, 10px;
+    
+}
+.header{
+    width: auto;
+    height: 90px;
+    
+    
+}
+
+.contenedor-nav{
+    display: flex;
+    height: 91px;
+    justify-content: flex-end;
+    
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb 46, 46, 49;
+}
+
+
+ul{
+    width: 550px;
+    height: 85px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+    
+    
+}
+.btn-contacto{
+    font-family:'Montserrat', sans-serif;  
+    font-size: 1em;
+    text-decoration: none;
+    color:white;
+    background-color: #ffaf1c;
+    border-radius: 15px;
+    width: 146px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+ @media (max-width: 600px){
+        nav{
+            flex-direction: column;
+        }
+    }
+
+/*--fin  de la barra de navegacion*/
+
+/*--hoja principal*/
+.contenedor-presentacion{
+    width: auto;
+    height: 740px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+.saludo{
+    width: auto;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    text-align: justify;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.nombre{
+    width: 500px;
+    height: 72px;
+    display: flex;
+    position: absolute;
+    top: 280px;
+    left: 110px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffc355;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentacion{
+     width: 410px;
+     height: 22px;
+     display: flex;
+     position: absolute;
+     top: 395px;
+     left: 110px;
+}
+h3{
+    font-size: 16px;
+    color: #e39300;
+}
+.btn-loque{
+    background-color:#ffaf1c;
+    border-radius: 100px;
+    width: 198px;
+    height: 49px;
+    display: flex;
+    position: absolute;
+    top: 486px;
+    left: 110px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagenprinc{
+    position: absolute;
+    right: 70px;
+    top: 100px;
+}
+/*-- retocar altura fin hoja principal*/
+.contenedor-skills{
+    width: auto;
+    height: 984px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+
+}
+.contenedor-conocimientos{
+    background-color: chartreuse;
+    width: 1009px;
+    height: 744px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.titulo-conocimientos{
+    background-color:seashell;
+    width: 457px;;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    
+}
+.detalles-conocimientos{
+   width: 400px;
+   height: 60px;
+   display: flex;
+   flex-direction: row;
+   background-color: slategray;
+}
+.contenedor-logos{
+    width: 850px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+
+}
+.caja-logo-html{
+     width: 263px;
+     height: 231px;
+     display: flex;
+     background-color: beige;
+     
+
+     
+}
+.caja-logo-css{
+    width: 263px;
+    height: 231px;
+    display: flex;
+    background-color: beige;
+    display: flex;
+    
+    
+}
+.caja-logo-sass{
+    width: 263px;
+    height: 231px;
+    display: flex;
+    background-color: beige;
+    
+    
+}
+.caja-logo-java{
+    width: 263px;
+    height: 231px;
+    display: flex;
+    background-color: beige;
+    display: flex;
+    
+}
+.caja-logo-react{
+    width: 263px;
+    height: 231px;
+    display: flex;
+    background-color: beige;
+    
+
+}
+.caja-logo-git{
+    width: 263px;
+    height: 231px;
+    display: flex;
+    background-color: beige;
+}
+ 
+/*-- fin logos */
+
+/*--comienzo cita*/
+.contenedor-cita{
+    width: auto;
+    height: 589px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.comilla-cita{
+    width: 80px;
+    height: 80px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 60px;
+
+    
+}
+
+.frase-cita{
+    width: 800px;
+    height: 104px;
+    background-color: rgb(206, 180, 116);
+    display: flex;
+
+}
+
+.autor-cita{
+    width: 137px;
+    height: 32px;
+    background-color: darkkhaki;
+    display: flex;
+    position: relative;
+    top: 60px;
+
+}
+/*-- fin cita */
+
+
+.contenedor-proyecto{
+    width: auto;
+    height: 1274px;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.titulo-proyecto{
+    width: 339px;
+    height: 54px;
+    background-color: darkseagreen;
+    display: flex;
+}
+
+.descripcion-proyecto{
+    width: 400px;
+    height: 66px;
+    background-color: darkturquoise;
+    display: flex;
+}
+
+.card-proyecto{
+    width: 1100px;
+    height: 1028px;
+    background-color: deeppink;
+    display:flex;
+    flex-wrap: wrap;
+    align-self: inherit;
+    justify-content: space-between;
+    
+    
+    
+    
+    
+
+}
+.portfolio{
+    width: 342px;
+    height: 348px;
+    background-color: gainsboro;
+    display: flex;
+
+}
+.memes{
+    width: 342px;
+    height: 348px;
+    background-color: black;
+    display: flex;
+
+}
+.match{
+    width: 342px;
+    height: 348px;
+    background-color: gainsboro;
+    display: flex;
+
+}
+.gastos{
+    width: 342px;
+    height: 348px;
+    background-color:black;
+    display: flex;
+
+}
+.reuniones{
+    width: 342px;
+    height: 348px;
+    background-color: gainsboro;
+    display: flex;
+
+}
+.app{
+    width: 342px;
+    height: 348px;
+    background-color: black;
+    display: flex;
+
+}
+.peliculas{
+    width: 342px;
+    height: 279px;
+    background-color: gainsboro;
+    display: flex;
+}
+/*-- fin proyecto */
+
+.contenedor-formulario{
+    width: auto;
+    height: 1014px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactame-escribime{
+    width: 1100px;
+    height: 689px;
+    background-color: lightgreen;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-contactame{
+    width: 489px;
+    height: 527px;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.titulo-contactame{
+    width: 469px;
+    height: 54px;
+    background-color: yellow;
+    display: flex;
+}
+.detalle-contactame{
+    width: 400px;
+    height: 110px;
+    display: flex;
+    background-color: blueviolet;
+}
+.redes-contactame{
+    width: 469px;
+    height: 180px;
+    display: flex;
+    background-color: brown;
+}
+
+.contenedor-escribime{
+    width: 489px;
+    height: 527px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.titulo-escribime{
+    width: 469px;
+    height: 54px;
+    display: flex;
+    background-color: cadetblue;
+}
+
+.card-escribime{
+    width: 469px;
+    height: 443px;
+    display: flex;
+    background-color: chocolate;
+}
+
+ footer{
+    width: auto;
+    height: 303px;
+    display: flex;
+    background-color: crimson;
+    justify-content: center;
+
+}
+ .contenedor-footer{
+   width: 1090px;
+   height: 303px;
+   display: flex;
+   background-color: cyan;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+} 
+
+.navegador-footer{
+    width: 414px;
+    height: 19px;
+    background-color: darkgoldenrod;
+    display: flex;
+}
+.iconos-footer{
+    width: 252px;
+    height: 63px;
+    background-color: darkorchid;
+    display: flex;
+}
+
+.autor-footer{
+    width: 177px;
+    height: 27px;
+    background-color: darkslateblue;
+    display: flex;
+}
+
+
+
+
+
+
+
+
