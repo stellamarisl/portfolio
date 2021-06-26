@@ -148,9 +148,11 @@ h3{
     width: 1009px;
     height: 744px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    
+    
     
 }
 .titulo-conocimientos{
@@ -159,7 +161,14 @@ h3{
     height: 54px;
     display: flex;
     justify-content: center;
+    align-items: center;
     
+    
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
 }
 .detalles-conocimientos{
    width: 400px;
@@ -167,6 +176,8 @@ h3{
    display: flex;
    flex-direction: row;
    background-color: slategray;
+   font-size: 17px;
+   align-items: center;
 }
 .contenedor-logos{
     width: 850px;
@@ -177,17 +188,31 @@ h3{
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 20px;
-    
-
+   
 }
 .caja-logo-html{
      width: 263px;
      height: 231px;
      display: flex;
      background-color: beige;
-     
+     justify-content: center;
+     align-items: center;
+    }
+.html{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 40px;
+}
 
-     
+.texto-html5{
+    font-family:'Montserrat', sans-serif; 
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
 }
 .caja-logo-css{
     width: 263px;
@@ -195,16 +220,49 @@ h3{
     display: flex;
     background-color: beige;
     display: flex;
-    
-    
+    justify-content: center;
+    align-items: center;
+}
+.css{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 40px;
+
+}
+.texto-css{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
 }
 .caja-logo-sass{
     width: 263px;
     height: 231px;
     display: flex;
     background-color: beige;
-    
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.sass{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 28px;
+}
+.texto-sass{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
 }
 .caja-logo-java{
     width: 263px;
@@ -212,21 +270,73 @@ h3{
     display: flex;
     background-color: beige;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.java{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 60px;
+}
+.texto-java{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
 }
 .caja-logo-react{
     width: 263px;
     height: 231px;
     display: flex;
     background-color: beige;
-    
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.react{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 40px;
+}
+.texto-react{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
+}
+
 .caja-logo-git{
     width: 263px;
     height: 231px;
     display: flex;
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.git{
+    display: flex;
+    bottom: 35px;
+    position: relative;
+    left: 24px;
+}
+.texto-git{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    display: flex;
+    position: relative;
+    top: 70px;
+    right: 35px;
 }
  
 /*-- fin logos */
@@ -251,38 +361,43 @@ h3{
     justify-content: center;
     position: relative;
     bottom: 60px;
-
-    
 }
+
 
 .frase-cita{
     width: 800px;
     height: 104px;
     background-color: rgb(206, 180, 116);
     display: flex;
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    align-items: center;
 }
 
 .autor-cita{
-    width: 137px;
+    width: auto;
     height: 32px;
     background-color: darkkhaki;
     display: flex;
     position: relative;
     top: 60px;
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+    align-items: center;
 }
 /*-- fin cita */
 
 
 .contenedor-proyecto{
     width: auto;
-    height: 1274px;
+    height: 1412px;
     background-color: darksalmon;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
  }
 
 .titulo-proyecto{
@@ -290,6 +405,8 @@ h3{
     height: 54px;
     background-color: darkseagreen;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descripcion-proyecto{
@@ -297,76 +414,146 @@ h3{
     height: 66px;
     background-color: darkturquoise;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center ;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
 }
 
 .card-proyecto{
     width: 1100px;
-    height: 1028px;
+    height: 1100px;
     background-color: deeppink;
     display:flex;
     flex-wrap: wrap;
-    align-self: inherit;
     justify-content: space-between;
-    
-    
-    
-    
-    
+    position: relative;
+    top: 61px;
 
+ 
 }
-.portfolio{
+.card-portfolio{
     width: 342px;
     height: 348px;
     background-color: gainsboro;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-.memes{
+.texto-portfolio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-call{
     width: 342px;
     height: 348px;
-    background-color: black;
+    background-color: rgb(170, 165, 165);
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
 }
-.match{
+.texto-videocall{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-personal{
     width: 342px;
     height: 348px;
     background-color: gainsboro;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.gastos{
+.texto-personal{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-documentos{
     width: 342px;
     height: 348px;
-    background-color:black;
+    background-color:rgb(158, 152, 152);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.reuniones{
+.texto-misdocumentos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.opiniones-personales{
     width: 342px;
     height: 348px;
     background-color: gainsboro;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.app{
+
+.texto-opiniones{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.aprendiendo{
     width: 342px;
     height: 348px;
-    background-color: black;
+    background-color: rgb(88, 84, 84);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.peliculas{
+.texto-aprendiendo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.biblioteca{
     width: 342px;
     height: 279px;
     background-color: gainsboro;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-biblioteca{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 /*-- fin proyecto */
 
+
+
+
 .contenedor-formulario{
     width: auto;
-    height: 1014px;
+    height: 1019px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -374,64 +561,136 @@ h3{
     
 }
 
-.contactame-escribime{
-    width: 1100px;
+.contenedorcontacto-escribo{
+    width: 960px;
     height: 689px;
-    background-color: lightgreen;
+    background-color: aqua;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
+    justify-content: space-evenly;
+  }
+
+
 .contenedor-contactame{
-    width: 489px;
+    width: 442px;
     height: 527px;
-    background-color: lightpink;
+    background-color: burlywood;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     
 }
 .titulo-contactame{
-    width: 469px;
-    height: 54px;
-    background-color: yellow;
-    display: flex;
+    width: 423px;
+    height: 80px;
+    background-color: chocolate;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 30px;
+    
 }
 .detalle-contactame{
-    width: 400px;
+    width: 410px;
     height: 110px;
-    display: flex;
-    background-color: blueviolet;
+    background-color: darkgoldenrod;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
 }
 .redes-contactame{
-    width: 469px;
-    height: 180px;
+    width: 433px;
+    height: 196px;
+    background-color: darkorchid;
     display: flex;
-    background-color: brown;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
 }
+.contenedor-twitter{
+    width: 183px;
+    height: 45px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+
+}
+.contenedor-github{
+    width: 183px;
+    height: 45px;
+    background-color: grey;
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+
+}
+.contenedor-linkedin{
+    width: 240px;
+    height: 45px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    font-family:'Montserrat', sans-serif;  
+    font-size: 16px;
+    justify-content: space-around;
+}
+.contenedor-email{
+    width: 290px;
+    height: 45px;
+    background-color: grey;
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: space-around;
+}
+
+
+
+
+
 
 .contenedor-escribime{
-    width: 489px;
-    height: 527px;
+    background-color: chartreuse;
     display: flex;
-    background-color: white;
+    width: 442px;
+    height: 527px;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.titulo-escribime{
-    width: 469px;
-    height: 54px;
-    display: flex;
-    background-color: cadetblue;
+   
 }
 
-.card-escribime{
-    width: 469px;
-    height: 443px;
+
+.form{
+    width: 442px;
+    height: 527px;
     display: flex;
-    background-color: chocolate;
+    flex-direction: column;
+    
+    
+     
+    
+    
 }
+
+
+
+.form-button{
+    
+    display: flex;
+    background-color: lightseagreen;
+    position: relative;
+    right: 150px;
+
+}
+/*fin formulario*/
 
  footer{
     width: auto;
@@ -452,25 +711,40 @@ h3{
 } 
 
 .navegador-footer{
-    width: 414px;
-    height: 19px;
+    
     background-color: darkgoldenrod;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
 }
-.iconos-footer{
+.nav-footer{
+    width: 414px;
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black
+}
+.icono-footer{
     width: 252px;
     height: 63px;
-    background-color: darkorchid;
+    background-color: rgb(219, 209, 224);
     display: flex;
 }
 
 .autor-footer{
-    width: 177px;
+    width: 200px;
     height: 27px;
     background-color: darkslateblue;
     display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
-
+.cerebro.png{
+    width: 32px;
+    height: 32px;
+}
 
 
 
