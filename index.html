@@ -11,65 +11,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
     <header>
         <div class="contenedor-nav">
          <ul>
-             
-            <li class="item"><a href="#">Hola</a></li>
-            <li class="item"><a href="#">Conocimiento</a></li>
-            <li class="item"><a href="#">Proyectos</a></li>
-            <li class="btn btn-contacto"><a href="#"><span style="color: white">Contacto</span></a></li>
+            <li class="item-nav"><a href="#saludo">Hola</a></li>
+            <li class="item-nav"><a href="#conocimiento">Conocimiento</a></li>
+            <li class="item-nav"><a href="#proyectos">Proyectos</a></li>
+            <li class="btn btn-contacto">
+                <a href="#contactame">Contacto</a>
+            </li>
          </ul> 
         </div> 
-        
     </header>
-    
+    <!--Fin barra de navegacion-->
 <section>
      <div class="contenedor-presentacion">
          <div class="saludo">
-             <h2>!Hola! soy</h2>
+             <a id="saludo"><a id="hola"></a><h2>¡Hola! soy</h2></a></a>
          </div>
          <div class="nombre">
-             <h1>Stella M Loreto</h1>
+             <a name="hola-footer"><h1>Stella M Loreto</h1></a>
         </div>
          <div class="presentacion">
             <h3>Estudiante de Front end, instructora de gym, amante de los amigurumis </h3>
         </div>
-        <div class="btn btn-loque"><a href="#"><span style="color: white">Lo que hago</span></a>
+        <div class="btn btn-loque">
+            <a href="#proyectos">Lo que hago</a>
          </div>
          <div class="imagenprinc">
-             <img src="undraw_web_devices_ad58.svg" height="500px" width="500px">
+             <img src="img-grales/undraw_web_devices_ad58.svg" alt="imagen de portada" height="500px" width="500px">
          </div>
      </div>    
- </section>   
+ </section> 
+ <!--Fin portada-->  
+
  <section>
      <div class="contenedor-skills">
+        
          <div class="contenedor-conocimientos">
-                 <div class="titulo-conocimientos">
-                     <h2>Mis conocimentos</h2>
-                 </div>
+            
+             <div class="titulo-conocimientos">
+                 <h2><a id="conocimiento">Mis conocimientos</h2></a>
+             </div>
 
-                 <div class="detalles-conocimientos">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt ratione doloremque, nihil libero est quas voluptas?</p>
-                 </div>
-
-                 <div class="contenedor-logos">
-                    <div class="caja-logo-html">
-                        <div class="html">
-                            <img src="html-5.png" width="75px" height="76px"/>
-                        </div>
-                        <div class="texto-html5">
-                            <p><strong>HTML 5</strong></p>
-                        </div>
-                    </div>
-
-                     <div class="caja-logo-css">
-                         <div class="css">
-                             <img src="css3.png" width="75px" height="76px"/>
+             <div class="detalles-conocimientos">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt ratione doloremque, nihil libero est quas voluptas?</p>
+             </div>
+<!--logos conocimientos-->
+             <div class="contenedor-logos">
+                 <div class="caja-logo-html">
+                         <div class="html">
+                         <img src="img-conocim/html-5.png" width="75px" height="76px"/>
                          </div>
+                         <div class="texto-html5">
+                         <p><strong>HTML 5</strong></p>
+                         </div>
+                 </div>
+
+                 <div class="caja-logo-css">
+                     <div class="css">
+                        <img src="img-conocim/css3.png" width="75px" height="76px"/>
+                     </div>
                          <div class="texto-css">
                              <p><strong>CSS 3</strong></p>
                          </div>
@@ -77,48 +85,48 @@
 
                      <div class="caja-logo-sass">
                         <div class="sass">
-                            <img src="sass.png" width="75px" height="76px"/>
+                            <img src="img-conocim/sass.png" width="75px" height="76px"/>
                         </div>
-                        <div class="texto-sass">
+                         <div class="texto-sass">
                             <p><strong>Sass</strong></p>
-                        </div>
+                         </div>
                      </div>
 
                      <div class="caja-logo-java">
-                        <div class="java">
-                            <img src="javascript.png" width="75px" height="76px"/>
-                        </div>
-                        <div class="texto-java">
+                         <div class="java">
+                            <img src="img-conocim/javascript.png" width="75px" height="76px"/>
+                         </div>
+                         <div class="texto-java">
                             <p><strong>JavaScript</strong></p>
-                        </div>
+                          </div>
                      </div>
 
                      <div class="caja-logo-react">
-                        <div class="react">
-                            <img src="react.png" width="75px" height="76px"/>
-                        </div>
-                        <div class="texto-react">
+                         <div class="react">
+                            <img src="img-conocim/react.png" width="75px" height="76px"/>
+                         </div>
+                         <div class="texto-react">
                             <p><strong>React</strong></p>
-                        </div>
+                         </div>
                      </div>
 
                      <div class="caja-logo-git">
-                        <div class="git">
-                            <img src="git.png" width="75px" height="76px"/>
-                        </div>
-                        <div class="texto-git">
+                         <div class="git">
+                            <img src="img-conocim/git.png" width="75px" height="76px"/>
+                         </div>
+                         <div class="texto-git">
                             <p><strong>GIT</strong></p>
-                        </div>
+                         </div>
                      </div>
                   </div>
-         </div>
+             </div>
      </div>
  </section>
 
  <section>
      <div class="contenedor-cita">
              <div class="comilla-cita">
-                 <img src="cita.png" width="80px" height="80px"/>
+                 <img src="img-grales/cita.png" alt="comillas"width="80px" height="80px"/>
              </div>
              <div class="frase-cita">
                  <p>Si bien a un arbol le lleva mucho tiempo cobrar altura a partir de una diminuta semilla, cuando finalmente crece en toda su dimension,  produce inmensurables flores y frutos, y ofrece reparo a la sombra de su copa frondosa. Cada uno de nosotros debe aspirar a ser un arbol asi de imponente.</p>
@@ -126,185 +134,228 @@
              <div class="autor-cita">
                  <p>Daisaku Ikeda</p>
              </div>
-         
      </div>
  </section>
-
-
+<!--Fin seccion cita-->
  <section>
-     
+ <!--comienzo seccion proyecto-->    
     <div class="contenedor-proyecto">
-
          <div class="titulo-proyecto">
-            <h2>Mis proyectos</h2>
+            <a id="proyectos"><h2>Mis proyectos</a></h2>
          </div>
          <div class="descripcion-proyecto">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, quas quia quaerat nam facere inventore.</p>
+             <p>Daruma Artesanias, nacio a partir de la pandemia como microemprenimiento.<br>
+             Rugido de un leon, son posts de aliento y enseñanza de la filosofia budista de Nichiren Daishonin.
+             </p>
          </div>
+<!--cards proyectos-->         
          <div class="card-proyecto">
-
-            <div class="card-portfolio">
-               <div class="mi-portfolio">
-                   <img src="miportfolio.PNG" width="232px" height="191px"/>
-               </div>
-                <div class="texto-portfolio">
-                   <p>Portfolio</p>
-                </div>
-            </div>
-
-             <div class="card-call">
-                 <div class="mi-card">
-                     <img src="videocall.svg" width="232px" height="191px"/>
-                 </div>
-                 <div class="texto-videocall">
-                     <P>Video llamadas</P>
-                 </div>
-            </div>
-
-             <div class="card-personal">
-                 <div class="personal">
-                     <img src="informacpersonal.svg" width="232px" height="191px"/>
-                 </div>
-                 <div class="texto-personal">
-                     <p>Informacion Personal</p>
-                 </div>
+             <div class="card-portfolio">
+                 <a href="#presentacion">
+                 <div class="mi-portfolio">
+                     <img src="img-proyectos/miportfolio.PNG" alt="imagen de portada" width="232px" height="191px">
+                  </div>
+             <div class="texto-portfolio">
+                 <p>Portfolio</p>
              </div>
+                 </a>
+         </div>
 
-             <div class="card-documentos">
+         <div class="card-daruma">
+             <a href="#presentacion">
+                 <div class="mi-card">
+                     <a href="https://www.instagram.com/darumaartesanias"target="_blank">
+                     <img src="img-proyectos/DARUMA .png"
+                     alt="imagen daruma" width="200px" height="191px"/>
+                 </div>
+                 <div class="texto-daruma">
+                      <P>Daruma Artesanias</P></a>
+                 </div>
+             </a>
+         </div>
+
+         <div class="card-rugido">
+             <a href="#presentacion">
+                 <div class="personal">
+                     <a href="https://www.instagram.com/Rugidodeunleon/"target="_blank">
+                     <img src="img-proyectos/leon.png" alt="imagen cabeza de un leon" width="160px" height="191px"
+                     />
+                 </div>
+                 <div class="texto-rugido">
+                    <p>@Rugidodeunleon</p></a>
+                 </div>
+             </a>
+         </div>
+
+         <div class="card-documentos">
+             <a href="#presentacion">
                  <div class="misdocumentos">
-                     <img src="misdocumentos.svg" width="232px" height="191px"/>
+                     <img src="img-proyectos/misdocumentos.svg" alt="mujer con documentos en mano" width="232px" height="191px"/>
                  </div>
                  <div class="texto-misdocumentos">
                      <p>Mis documentos</p>
                  </div>
-             </div>
-             <div class="opiniones-personales">
+             </a>
+         </div>
+
+         <div class="card-opiniones-personales">
+             <a href="#presentacion">
                  <div class="misoponiones">
-                     <img src="opinionespersonales.svg" width="232px" height="191px"/>
+                     <img src="img-proyectos/opinionespersonales.svg" alt="mujer con globo de dialogo" width="232px" height="191px"/>
                  </div>
                  <div class="texto-opiniones">
                      <p>Opiniones Personales</p>
                  </div>
+             </a>
+         </div>
 
-             </div>
-             <div class="aprendiendo">
+         <div class="card-aprendiendo">
+             <a href="#presentacion">
                  <div class="aprendiendonline">
-                     <img src="aprendiendo-online.svg" width="232px" height="191px"/>
+                     <img src="img-proyectos/aprendiendo-online.svg" alt="mujer sentada al escritorio con computadora"width="232px" height="191px"/>
                  </div>
                  <div class="texto-aprendiendo">
                      <p>Aprendiendo Online</p>
                  </div>
-             </div>
+             </a>
+         </div>
 
-             <div class="biblioteca">
+         <div class="card-biblioteca">
+             <a href="#presentacion">
                  <div class="mi-biblioteca">
-                     <img src="biblioteca.svg" width="200px"
+                     <img src="img-proyectos/biblioteca.svg" alt="imagen mujer en biblioteca" width="200px"
                      height="161px"/>
                  </div>
                  <div class="texto-biblioteca">
                      <p>Biblioteca</p>
                  </div>
-             </div>
+             </a>
+         </div>
     </div>
-
  </section>
-
+<!--fin proyectos-->
  <section>
+<!--comienzo formulario-->
+<div class="contenedor-formulario">
+     <div class="contenedorcontacto-escribo">
+         <div class="contenedor-contactame"> 
 
-     <div class="contenedor-formulario">
-         <div class="contenedorcontacto-escribo">
+             <div class="titulo-contactame">
+                <a id="contactame"><h2>Contactame</h2></a>
+             </div>
 
-             <div class="contenedor-contactame">                
-                 <div class="titulo-contactame">
-                   <h2>Contactame</h2>
-                 </div>
-                 <div class="detalle-contactame">
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quia nam aut exercitationem error quasi debitis repellat. Sequi doloremque aperiam nesciunt, fugit blanditiis harum ut culpa, vitae porro in aliquid!</p>
-                 </div>
-                 <div class="redes-contactame">
-                     <div class="contenedor-twitter">
-                        <img src="twitter.png" width="35px" height="35"/>
-                        <p>@sml65ar</p>
-                     </div>
-                     <div class="contenedor-github">
-                        <img src="github.png" width="35px" height="35px"/>
-                        <p>stellamarisl</p>
-                     </div>
-                     <div class="contenedor-linkedin">
-                       <img src="linkedin.png" width="35px" height="35px"/>
-                       <p>stella-maris-loreto</p> 
-                     </div>
-                     <div class="contenedor-email">
-                        <img src="mail.png" width="35px" height="35px"/>
-                        <p>sml65ar@yahoo.com.ar</p>
-                     </div>
-                 </div>
-         </div>    
-         
+             <div class="detalle-contactame">
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quia nam aut exercitationem error quasi debitis repellat. Sequi doloremque aperiam nesciunt, fugit blanditiis harum ut culpa, vitae porro in aliquid!</p>
+             </div>
 
+             <div class="redes-contactame">
+                 <ul class="redes">
+                    <li class="red-twitter">
+                         <a href="https://twitter.com/sml65ar?s=08/"target="_blank">
+                         <img src="icono-redes/twitter.svg" alt="imagen iconotwitter" width="35px" height="35px"/>
+                        </a>
+                         <p>@sml65ar</p>
+                     </li>
+                     <br>
+                     <li class="red-github">
+                         <a href="https://github.com/stellamarisl/"target="_blank">
+                         <img src="icono-redes/github.svg" alt="imagen icono github" width="35px" height="35px"/>
+                        </a>
+                         <p>stellamarisl</p>
+                     </li>
+                     <br>
+                     <li class="red-linkedin">
+                         <a href="https://www.linkedin.com/in/stella-maris-loreto-24919ab9/"target="_blank">
+                         <img src="icono-redes/linkedin.svg" alt="imagen icono linkedin" width="35px" height="35px"/></a>
+                         <p>stella-maris-loreto</p>
+                     </li>
+                     <br>
+                     <li class="red-email">
+                         <a href="mailto:sml65ar@yahoo.com.ar"target="_blank">
+                         <img src="icono-redes/email.png" alt="imagen icono email" width="35px" height="35px"/></a>
+                         <p>sml65ar@yahoo.com.ar</p>
+                     </li>
+                 </ul>
+             </div>
+         </div> 
 
-         <div class="contenedor-escribime">
+             <div class="contenedor-escribime">
                  <div class="titulo-escribime">
-                <h2>Escribime</h2>
-                 </div> 
- <section>                                              
-            <div class="form">     
-                 <form action="contacto" method="POST">
-                     <label for="Name" >Nombre * </label><br>
-                     <input type="text" id="Name" name="Name"  placeholder="p. ej.: Stella M"/>
+                     <h2>Escribime</h2>
+                 </div>
+             <div class="contenedor-form">
+                 <form action="#" method="POST">
+                      <div class="datos-formulario">
+                          <div class="nombre-formulario">
+                             <label for="nombre">Nombre:*</label>
+                             <br>
+                             <input type="text" style="width: 170px; height: 20px; border-radius: 15px;" id="nombre" name="nombre"  placeholder="p.ej.:Stella Maris"/>
+                          </div>
 
-                     <label for="Surname">Apellido * </label><br>
-                     <input type="text" id="Surname" name="Surname" placeholder="p. ej.: Loreto"/>
-
-                     <label for="email">Email *</label>
-                     <input type="email" id="email" name="email"
-                     placeholder="p. ej.:sml65ar@yahoo.com.ar"/>
-
-                     <label for="mje">Mensaje *</label>
-                     <textarea id="mje" name="mje" placeholder="Escriba un mensaje aqui">
-                     </textarea>
-
-                            
-                 </form>
-                </div>        
-            
- </section>               
-                     <div class="form-button">
-
+                          <div class="apellido-formulario">
+                              <label for="apellido">Apellido:*</label>
+                              <br>
+                              <input type="text" style="width: 170px; height: 20px; border-radius: 15px;" id="apellido" name="apellido" placeholder="p.ej.:Loreto"/>
+                         </div>
                      </div>
-                    
-                 
-          </div>
-     </div>
-
+                     <div class= "correo-formulario">
+                             <label for="email">Email:*</label>
+                             <br>
+                             <input type="email" style="width: 250px; height: 20px; border-radius: 15px;" id="email" name="email" placeholder="p.ej.:sml65ar@yahoo.com.ar"/>
+                     </div>
+                     <div class="mensaje-formulario">
+                             <label for="textarea">Mensaje*</label>
+                             <textarea class="textarea" style="border-radius: 15px;" cols="30" rows="10" >Escriba un mensaje aqui</textarea>
+                     </div>
+                     <div class="enviar-form">
+                             <input type="boton" class="boton-enviar" value="Enviar">
+                     </div>
+                 </form>
+                 </div>
+             </div> 
+      </div>
+</div> 
  </section>
+<!--fin seccion formulario-->
 
  <footer>
      <div class="contenedor-footer">
          <div class="navegador-footer">
           <ul class="nav-footer">
-              <li class="hola-footer">Hola</li>
-              <li class="conocimiento-footer">Conocimientos</li>
-              <li class="proyecto-footer">Proyectos</li>
-              <li class="contacto-footer">Contacto</li>
+              <li class="hola-footer">
+                  <a href="#hola">Hola</a>
+                </li>
+              <li class="conocimiento-footer">
+                  <a href="#conocimiento">Conocimientos</a>
+                </li>
+              <li class="proyecto-footer">
+                  <a href="#proyectos">Proyectos</a>
+                </li>
+              <li class="contacto-footer">
+                  <a href="#contactame">Contacto</a>
+                </li>
           </ul>
          </div>
          <div class="iconos-footer">
            <ul class="icono-footer">
                <li class="twitter-footer">
-                   <img src="twitter.png" width="35px"
-                   height="35px"/>
+                     <a href="https://twitter.com/sml65ar?s=08" target="_blank"><img src="icono-redes/twitter.svg" alt="imagen icono twitter"
+                        width="35px"
+                        height="35px"/></a>
                </li>
                <li class="github-footer">
-                  <img src="github.png"/>
+                     <a href="https://github.com/stellamarisl">
+                     <img src="icono-redes/github.svg" alt= "imagen icono github"width="35px" height="35px"/></a>
                </li>
                <li class="linkedin.footer">
-                  <img src="linkedin.png"/>
+                     <a href="https://www.linkedin.com/in/stella-maris-loreto-24919ab9/">
+                     <img src="icono-redes/linkedin.svg" alt="imagen icono Linkedin" width="35px"
+                     height="35px"/></a>
                </li>
                <li class="mail-footer">
-                   <img src="mail.png"/>
+                     <a href="mailto:sml65ar@yahoo.com.ar">   
+                     <img src="icono-redes/email.png" alt="imagen icono email" width="35px" height="35px"/></a>
                </li>
-                                  
            </ul>
          </div>
          <div class="autor-footer">
@@ -312,11 +363,11 @@
                  <p> Hecho con</p>
              </div>
              <div class="imagen-hecho">
-                 <img src="cerebro.png" width="32px" height="32px"/>
+                 <img src="img-grales/corazon.png" alt="imagen mitad corazon mitad cerebro" width="30px" height="30px"/>
              </div>
-            <div class="autor">
-                <p>por Stella M.</p>
-            </div> 
+             <div class="autor">
+                 <p>por Stella M.</p>
+             </div> 
          </div>
      </div>
 

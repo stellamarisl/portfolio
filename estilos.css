@@ -3,29 +3,35 @@ body{
     width:  100%;
     height: 100%;
     padding: 10px, 5px, 5px, 10px;
-    
 }
+
 .header{
     width: auto;
     height: 90px;
-    
-    
-}
+  }
 
 .contenedor-nav{
-    display: flex;
+    width: 100%;
     height: 91px;
+    display: flex;
     justify-content: flex-end;
-    
-}
+    position: fixed;
+    background-color: white;
+    box-shadow: #999;
+    -webkit-box-shadow: 0px 5px 20px #999;
+    -moz-box-shadow: 0px 5px 10px #999;
+ }
 a{
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     text-decoration: none;
-    color: rgb 46, 46, 49;
+    color: black !important;
 }
-
-
+.a:hover{
+    color: chocolate !important;
+    transition: all 0.2s ease;
+    
+}
 ul{
     width: 550px;
     height: 85px;
@@ -34,15 +40,13 @@ ul{
     justify-content: space-between;
     padding-right: 30px;
     align-items: center;
-    
-    
 }
+
 .btn-contacto{
-    font-family:'Montserrat', sans-serif;  
+    font-family:'Montserrat', sans-serif; 
     font-size: 1em;
     text-decoration: none;
-    color:white;
-    background-color: #ffaf1c;
+    background-color: #ffa500 !important;
     border-radius: 15px;
     width: 146px;
     height: 40px;
@@ -51,18 +55,16 @@ ul{
     align-items: center;
 }
 
+.btn-contacto:hover{
+    color:#8e5c00 !important; 
+    box-shadow: #8e5c00 0 4px 16px;
+    transition: all 0,2s ease;
+}
 
+ 
+/*fin  de la barra de navegacion*/
 
-
- @media (max-width: 600px){
-        nav{
-            flex-direction: column;
-        }
-    }
-
-/*--fin  de la barra de navegacion*/
-
-/*--hoja principal*/
+/*hoja principal*/
 .contenedor-presentacion{
     width: auto;
     height: 740px;
@@ -81,24 +83,25 @@ ul{
 }
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
     font-style: normal;
-    font-weight: 900;
+    
 }
 
 .nombre{
-    width: 500px;
+    width: auto;
     height: 72px;
     display: flex;
-    position: absolute;
-    top: 280px;
+    position: relative;
+    bottom: 40px;
     left: 110px;
 }
 h1{
-    font-size: 60px;
-    font-weight: 900;
+    font-size: 3em;
+    font-weight: 90%;
+    display: flex;
     color: #ffc355;
     font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 2px #8e5c00;
 }
 
 .presentacion{
@@ -114,7 +117,7 @@ h3{
     color: #e39300;
 }
 .btn-loque{
-    background-color:#ffaf1c;
+    background-color: #ffa500 !important;
     border-radius: 100px;
     width: 198px;
     height: 49px;
@@ -122,82 +125,87 @@ h3{
     position: absolute;
     top: 486px;
     left: 110px;
-    font-weight: 500;
+    font-weight: 500px;
     justify-content: center;
     align-items: center;
-    
+}
+.btn-loque:hover{
+    color:#8e5c00 !important; 
+    box-shadow: #8e5c00 0 4px 16px;
+    transition: all 0,2s ease;
 }
 
 .imagenprinc{
-    position: absolute;
-    right: 70px;
-    top: 100px;
+    position: relative;
+    display: flex;
+    left: 230px;
+    top: auto;
 }
-/*-- retocar altura fin hoja principal*/
+
+
+/*--  fin portada*/
+
 .contenedor-skills{
     width: auto;
     height: 984px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: silver;
-
+     background-color: #ffd78e;
 }
 .contenedor-conocimientos{
-    background-color: chartreuse;
     width: 1009px;
     height: 744px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    
-    
-    
 }
 .titulo-conocimientos{
-    background-color:seashell;
-    width: 457px;;
+    width: 457px;
     height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 40px;
 }
 .detalles-conocimientos{
    width: 400px;
    height: 60px;
    display: flex;
    flex-direction: row;
-   background-color: slategray;
    font-size: 17px;
    align-items: center;
 }
+/*Comienzo cajas con logos*/
+
 .contenedor-logos{
     width: 850px;
     height: 550px;
     display: flex;
     flex-direction: row;
-    background-color: tomato;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 20px;
-   
 }
-.caja-logo-html{
+.contenedor-logos :hover{
+    border-color: chocolate;
+    transition: linear;
+}
+.caja-logo-html
+    {
      width: 263px;
      height: 231px;
      display: flex;
      background-color: beige;
      justify-content: center;
      align-items: center;
+     border: 3px solid #ffaf1c;
+     border-radius: 10px;
     }
+
 .html{
     display: flex;
     bottom: 35px;
@@ -212,7 +220,10 @@ h2{
     display: flex;
     position: relative;
     top: 70px;
-    right: 35px;
+    right: 30px;
+}
+.texto-html5 :hover{
+    color: chocolate;
 }
 .caja-logo-css{
     width: 263px;
@@ -222,14 +233,16 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #ffaf1c;
+    border-radius: 10px;
 }
 .css{
     display: flex;
     bottom: 35px;
     position: relative;
     left: 40px;
-
 }
+
 .texto-css{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -239,6 +252,9 @@ h2{
     top: 70px;
     right: 35px;
 }
+.texto-css :hover{
+    color: chocolate;
+}
 .caja-logo-sass{
     width: 263px;
     height: 231px;
@@ -247,6 +263,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #ffaf1c;
+     border-radius: 10px;
   }
 
 .sass{
@@ -264,6 +282,9 @@ h2{
     top: 70px;
     right: 35px;
 }
+.texto-sass :hover{
+    color: chocolate;
+}
 .caja-logo-java{
     width: 263px;
     height: 231px;
@@ -272,7 +293,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border: 3px solid #ffaf1c;
+     border-radius: 10px;
 }
 .java{
     display: flex;
@@ -289,6 +311,9 @@ h2{
     top: 70px;
     right: 35px;
 }
+.texto-java :hover{
+    color: chocolate;
+}
 .caja-logo-react{
     width: 263px;
     height: 231px;
@@ -297,6 +322,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #ffaf1c;
+     border-radius: 10px;
 }
 .react{
     display: flex;
@@ -313,7 +340,9 @@ h2{
     top: 70px;
     right: 35px;
 }
-
+.texto-react :hover{
+    color: chocolate;
+}
 .caja-logo-git{
     width: 263px;
     height: 231px;
@@ -322,6 +351,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid #ffaf1c;
+     border-radius: 10px;
 }
 .git{
     display: flex;
@@ -338,6 +369,9 @@ h2{
     top: 70px;
     right: 35px;
 }
+.texto-git :hover{
+    color: chocolate;
+}
  
 /*-- fin logos */
 
@@ -345,29 +379,25 @@ h2{
 .contenedor-cita{
     width: auto;
     height: 589px;
-    background-color: chocolate;
+    background-color: #ffc355;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
 
-
 .comilla-cita{
     width: 80px;
     height: 80px;
-    background-color: crimson;
     display: flex;
     justify-content: center;
     position: relative;
     bottom: 60px;
 }
 
-
 .frase-cita{
     width: 800px;
     height: 104px;
-    background-color: rgb(206, 180, 116);
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -377,7 +407,6 @@ h2{
 .autor-cita{
     width: auto;
     height: 32px;
-    background-color: darkkhaki;
     display: flex;
     position: relative;
     top: 60px;
@@ -386,196 +415,250 @@ h2{
     font-weight: 900;
     align-items: center;
 }
+
 /*-- fin cita */
 
+/*--proyecto*/
 
 .contenedor-proyecto{
     width: auto;
     height: 1412px;
-    background-color: darksalmon;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
  }
 
 .titulo-proyecto{
     width: 339px;
     height: 54px;
-    background-color: darkseagreen;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .descripcion-proyecto{
-    width: 400px;
+    width: 450px;
     height: 66px;
-    background-color: darkturquoise;
     display: flex;
     font-family: 'Montserrat', sans-serif;
     justify-content: center ;
     align-items: center;
     position: relative;
     top: 20px;
-
 }
 
 .card-proyecto{
     width: 1100px;
     height: 1100px;
-    background-color: deeppink;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     top: 61px;
-
- 
+    
+}
+.card-proyecto :hover{
+    border-color: chocolate;
+    transition: 0.2s;
 }
 .card-portfolio{
     width: 342px;
     height: 348px;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
 }
+.card-portfolio :hover{
+    border-color: chocolate;
+    transition: 0.2s;
+}
+
 .texto-portfolio{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
+}
+.texto-portfolio :hover{
+    color: #ffaf1c
 }
 
-.card-call{
+.card-daruma{
     width: 342px;
     height: 348px;
-    background-color: rgb(170, 165, 165);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
 }
-.texto-videocall{
+.card-daruma :hover{
+    border-color: chocolate;
+    transition: 0.2s;
+}
+.texto-daruma{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
 }
-
-.card-personal{
+.texto-daruma :hover{
+    color: #ffaf1c
+}
+.card-rugido{
     width: 342px;
     height: 348px;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
 }
-.texto-personal{
+.card-rugido :hover{
+    border-color: chocolate;
+    transition: 0.2s;
+}
+
+.texto-rugido{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
 }
-
+.texto-rugido :hover{
+    color: #ffaf1c
+}
 .card-documentos{
     width: 342px;
     height: 348px;
-    background-color:rgb(158, 152, 152);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
+}
+.card-documentos :hover{
+    border-color: chocolate;
+    transition: 0.2s;
 }
 .texto-misdocumentos{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
+    
 }
-
-.opiniones-personales{
+.texto-misdocumentos :hover{
+    color: #ffaf1c
+}
+.card-opiniones-personales{
     width: 342px;
     height: 348px;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
+}
+.card-opiniones-personales :hover{
+    border-color: chocolate;
+    transition: 0.2s;
 }
 
 .texto-opiniones{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
+}
+.texto-opiniones :hover{
+    color: #ffaf1c
 }
 
-
-.aprendiendo{
+.card-aprendiendo{
     width: 342px;
     height: 348px;
-    background-color: rgb(88, 84, 84);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
+}
+.card-aprendiendo :hover{
+    border-color: chocolate;
+    transition: 0.2s;
 }
 .texto-aprendiendo{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
 }
-
-.biblioteca{
+.texto-aprendiendo :hover{
+    color: #ffaf1c
+}
+.card-biblioteca{
     width: 342px;
     height: 279px;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    border: 3px solid #ffaf1c;
+}
+.card-biblioteca :hover{
+    border-color: chocolate;
+    transition: 0.2s;
 }
 .texto-biblioteca{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    justify-content: center;
+    display: flex;
+}
+.texto-biblioteca :hover{
+    color: #ffaf1c
 }
 /*-- fin proyecto */
-
-
-
 
 .contenedor-formulario{
     width: auto;
     height: 1019px;
-    background-color: blue;
+    background-color: #ffe1aa;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .contenedorcontacto-escribo{
     width: 960px;
     height: 689px;
-    background-color: aqua;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
 
-
 .contenedor-contactame{
     width: 442px;
     height: 527px;
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -584,167 +667,243 @@ h2{
 .titulo-contactame{
     width: 423px;
     height: 80px;
-    background-color: chocolate;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: large;
     padding-left: 10px;
     position: relative;
     bottom: 30px;
-    
 }
 .detalle-contactame{
     width: 410px;
     height: 110px;
-    background-color: darkgoldenrod;
     font-family: 'Montserrat', sans-serif;
     padding-left: 10px;
+    position: relative;
+    bottom: 30px;
 }
+/*iconos redes*/
+
+
 .redes-contactame{
     width: 433px;
-    height: 196px;
-    background-color: darkorchid;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-
+    justify-content: space-evenly;
 }
-.contenedor-twitter{
-    width: 183px;
-    height: 45px;
-    background-color: white;
-    align-items: center;
+
+.redes{
+    width: 433px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.red-twitter{
+    width: 200px;
+    height: 35px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    justify-content: space-around;
-
 }
-.contenedor-github{
+
+.red-twitter:hover{
+    color: chocolate;
+    transition: all 0.2s ease;
+}
+
+.red-github{
     width: 183px;
-    height: 45px;
-    background-color: grey;
-    align-items: center;
+    height: 35px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    justify-content: space-around;
-
 }
-.contenedor-linkedin{
+.red-github:hover{
+    color: chocolate;
+}
+
+.red-linkedin{
     width: 240px;
-    height: 45px;
-    background-color: white;
-    align-items: center;
+    height: 35px;
     display: flex;
     font-family:'Montserrat', sans-serif;  
     font-size: 16px;
-    justify-content: space-around;
+    
 }
-.contenedor-email{
+.red-linkedin:hover{
+    color: chocolate;
+}
+.red-email{
     width: 290px;
-    height: 45px;
-    background-color: grey;
-    align-items: center;
+    height: 35px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    justify-content: space-around;
+    
+}
+.red-email:hover{
+    color: chocolate;
 }
 
 
-
-
-
+/*fin redes formulario*/
 
 .contenedor-escribime{
-    background-color: chartreuse;
     display: flex;
     width: 442px;
     height: 527px;
     flex-direction: column;
-    justify-content: space-evenly;
-   
 }
 
-
-.form{
-    width: 442px;
-    height: 527px;
+.titulo-escribime{
+    width: 423px;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    
-    
-     
-    
-    
+    align-items: flex-start;
+}
+.contenedor-form{
+     width: 423px;
+     height: 450px;
+     display: flex;
+}
+.datos-formulario{
+    width: 423px;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    top: 50px;
+}
+.nombre-formulario{
+  font-family:"Montserrat", sans-serif;
+  flex-grow: 1;
+    width: 191px;
+    height: 50px;
+}
+.apellido-formulario{
+    font-family: "Montserrat", sans-serif;
+    flex-grow: 1;
 }
 
-
-
-.form-button{
-    
+.correo-formulario{
+    font-family:"Montserrat", sans-serif; 
+    flex-grow: 1;
+    position: relative;  
+    top: 70px;
+}
+.mensaje-formulario{
+    font-family: "Montserrat", sans-serif;
     display: flex;
-    background-color: lightseagreen;
     position: relative;
-    right: 150px;
-
+    top: 90px;
+    flex-grow: 1;
+    flex-direction: column;
 }
-/*fin formulario*/
 
+.enviar-form{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    position: relative;
+    top: 110px;
+    justify-content: center;
+}
+.boton-enviar{
+        font-family: "Montserrat", sans-serif;
+        font: size 26px;
+        padding-left: 40px;
+        color: black;
+        background: #ffa500;
+        display: flex;
+        justify-content: center;
+        width:80px;
+        height:35px;
+        transition: all 0.2s ease;
+        border-radius: 20%;
+       }
+
+.boton-enviar:hover{
+    box-shadow: #8e5c00 0 4px 16px;
+    transition: all 0,2s ease;
+}
+
+
+/*fin formulario*/
+/* footer */
  footer{
     width: auto;
     height: 303px;
     display: flex;
-    background-color: crimson;
     justify-content: center;
-
+    background-color: white;
 }
  .contenedor-footer{
    width: 1090px;
    height: 303px;
    display: flex;
-   background-color: cyan;
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
 } 
 
-.navegador-footer{
-    
-    background-color: darkgoldenrod;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    
-}
 .nav-footer{
     width: 414px;
     height: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: black
 }
 .icono-footer{
     width: 252px;
     height: 63px;
-    background-color: rgb(219, 209, 224);
     display: flex;
+}
+icono-redes/twitt.png:hover{
+    color: chocolate !important;
+}
+icono-redes/github.png:hover{
+    color: chocolate !important;
+}
+icono-redes/linkedin.png:hover{
+    color: chocolate !important;
+}
+icono-redes/email.png:hover{
+    color: chocolate !important;
 }
 
 .autor-footer{
-    width: 200px;
+    width: 220px;
     height: 27px;
-    background-color: darkslateblue;
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.cerebro.png{
-    width: 32px;
-    height: 32px;
-}
+@media (max-width: 600px){
+    .contenedor-nav{
+        width: 100%;
+        flex-direction:column;
+        }
+    }
+@media (max-width: 600px){
+    .contenedor-presentacion{
+         flex-direction: column;
+          width: 100%;
+       }
+    }
+@media (max-width: 600px){
+    .contenedor-cita{
+        background-color: #ffd78e;
+         width: auto;
+            }
+    }
+ @media (max-width: 600px){
+     .contenedor-formulario{
+         width: auto;
+        background-color: #ffd78e;
+        flex-direction: column;
+          }
+    } 
+
+/*Termineeeeeee*/
 
 
 
